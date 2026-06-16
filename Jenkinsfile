@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Gurukiran-H-S/myMavenApp.git'
+                git branch: 'main', url: 'https://github.com/GurukiranH-S/M1A.git'
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'java -jar target/myMavenApp-1.0-SNAPSHOT.jar'
+                sh 'java -jar target/M1A-1.0-SNAPSHOT.jar'
             }
         }
 
